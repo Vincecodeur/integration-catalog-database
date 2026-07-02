@@ -1,0 +1,49 @@
+INSERT INTO integration (
+    type_id,
+    partner_id,
+    name,
+    short_description,
+    status,
+    website_url,
+    api_base_url,
+    api_version,
+    sandbox_available,
+    webhook_available
+)
+VALUES
+(
+    1,
+    1,
+    'Colissimo',
+    'French parcel carrier',
+    'Active',
+    'https://www.colissimo.entreprise.laposte.fr',
+    'https://api.laposte.fr',
+    'v2',
+    TRUE,
+    FALSE
+),
+(
+    1,
+    2,
+    'DHL',
+    'Global carrier',
+    'Active',
+    'https://www.dhl.com',
+    'https://api.dhl.com',
+    'v1',
+    TRUE,
+    TRUE
+),
+(
+    3,
+    3,
+    'Shopify',
+    'E-commerce platform',
+    'Active',
+    'https://www.shopify.com',
+    'https://shopify.dev',
+    '2025-10',
+    TRUE,
+    TRUE
+);

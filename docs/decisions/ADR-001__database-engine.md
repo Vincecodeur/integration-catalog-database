@@ -6,25 +6,23 @@ Accepted
 
 ## Context
 
-The project requires a relational database engine suitable for learning SQL, modeling professional integration data and supporting future architecture projects.
+The project requires a relational database engine suitable for learning SQL and simulating a professional environment.
 
 ## Decision
 
-PostgreSQL 17 is used as the database engine.
+PostgreSQL 17 is selected.
 
 ## Rationale
 
-PostgreSQL supports:
+PostgreSQL provides:
 
-- Relational modeling
-- Primary keys
-- Foreign keys
-- Constraints
-- Joins
-- Aggregations
+- Strong relational modeling support
+- PK/FK constraints
 - Advanced SQL features
-- Future usage with APIs and backend applications
+- Excellent documentation
+- Scalability
+- High adoption in modern SaaS platforms
 
 ## Consequences
 
-The project will be more representative of a professional SaaS architecture than a lightweight SQLite-only learning project.
+All SQL developments target PostgreSQL compatibility.

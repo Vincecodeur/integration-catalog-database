@@ -6,32 +6,31 @@ Accepted
 
 ## Context
 
-Several business relationships are many-to-many:
+Several relationships are many-to-many.
 
-- Integration to Capability
-- Integration to Country
-- Integration to Anchanto Product
+Examples:
+
+- Integration ↔ Capability
+- Integration ↔ Country
+- Integration ↔ Platform Product
 
 ## Decision
 
-Each many-to-many relationship is modeled using a dedicated junction table.
+Use dedicated junction tables.
 
-## Junction Tables
+## Implementations
 
 - integration_capability
 - integration_country
 - integration_product
 
-## Rationale
+## Benefits
 
-This design ensures:
-
-- Data normalization
+- Database normalization
+- Flexibility
 - Referential integrity
-- Extensibility
-- Query flexibility
-- Avoidance of repeated columns such as country_1, country_2 or capability_1
+- Better reporting capabilities
 
 ## Consequences
 
-Queries require joins, but the model remains clean, scalable and professional.
+Queries require JOIN operations but remain scalable and maintainable.

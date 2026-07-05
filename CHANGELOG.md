@@ -40,3 +40,30 @@ All notable changes to this project will be documented in this file.
 
 - Repository initialized
 - Initial project structure committed
+
+## [0.2.0] - 2026-07-05
+
+### Added
+
+- Contact entity
+- Documentation entity
+- Integration Method entity
+- Integration Method Mapping junction table
+
+### Reporting
+
+- Contacts by Partner
+- Integration Methods by Integration
+
+### Architecture
+
+- ADR-003 Reference Data Strategy
+
+### Improvements
+
+- Reference data governance strategy documented
+- Normalization roadmap defined
+- Future normalization candidates identified:
+  - integration_status
+  - documentation_type
+  - contact_role

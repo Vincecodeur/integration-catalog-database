@@ -67,3 +67,73 @@ All notable changes to this project will be documented in this file.
   - integration_status
   - documentation_type
   - contact_role
+
+# [2.0.0]
+
+## Added
+
+### Governance
+
+- ADR-003 Reference Data Strategy
+- ADR-004 Migration Strategy
+- ADR-005 Documentation First Strategy
+
+### Reference Data
+
+- integration_status
+- documentation_type
+- contact_role
+- endpoint_type
+- authentication_method
+- endpoint_environment
+
+### Business Entities
+
+- contact
+- documentation
+- integration_endpoint
+- integration_status_history
+
+### Endpoint Architecture
+
+Introduced endpoint architecture:
+
+Integration
+→ Endpoint
+→ Environment
+→ URL
+
+### Documentation
+
+Added:
+
+- Integration Lifecycle
+- Normalization Roadmap
+- V2 Release Documentation
+
+## Changed
+
+### Architecture
+
+Refactored status management:
+
+integration.status
+→ integration_status
+
+Refactored documentation classification:
+
+documentation.document_type
+→ documentation_type
+
+Refactored contact roles:
+
+contact.role
+→ contact_role
+
+## Migration
+
+Added migration framework:
+
+- M001 integration_status migration
+- M002 documentation_type migration
+- M003 contact_role migration

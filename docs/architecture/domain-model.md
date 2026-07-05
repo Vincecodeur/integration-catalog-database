@@ -117,3 +117,14 @@ Integration ↔ Platform Product (N:N)
 - Strong referential integrity
 - Explicit junction tables
 - PostgreSQL compatible
+
+## Contact
+
+Represents a business or technical contact associated with a partner.
+
+Examples:
+
+- Technical Account Manager
+- Support Contact
+- Business Contact
+- Partner Manager
